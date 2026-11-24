@@ -1,0 +1,36 @@
+@'
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Database files
+data/*.db
+data/*.sqlite3
+
+# Runtime files
+logs/
+exports/
+*.log
+'@ | Set-Content -Encoding utf8 .gitignore
+
+@'
+
+# Old practice and temporary files
+connection_test.py
+test_api_get.py
+test_api_post.py
+project_tree.txt
+'@ | Add-Content .gitignore
